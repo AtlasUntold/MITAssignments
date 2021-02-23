@@ -5,13 +5,11 @@ def computePrimes():
     count = 1
     number = 3
     check = 0
-    while count <= 1000:
+    while count < 1000:
             for i in range(1, (number + 1)):
                 #time.sleep(.5)
                 if number % i == 0 and check < 2:
                     check += 1
-                    if number == 7927:
-                        exit()
                     if check >= 2 and i != number:
                         #print(number, " is not prime.")
                         number += 2
